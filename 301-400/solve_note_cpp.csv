@@ -1,4 +1,3 @@
-表記ルール,CSVであるので当然、comma区切りであるが、内容に関する区切り文字は|とする,,,,
 contest,problem,algorithm,note,date,solve type
 315,A,問題文通り,std::findを使った方がよかった,2026/8/21,
 315,B,問題文通り | 累積和,累積和が使えるらしい,2026/8/21,
