@@ -1,5 +1,4 @@
-// B
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 
 unsigned long long AnoAjo(int A)
