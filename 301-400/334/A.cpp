@@ -1,8 +1,6 @@
-// A
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
-int main()
-{
+int main() {
     int B, G;
     cin >> B >> G;
     if (B > G)

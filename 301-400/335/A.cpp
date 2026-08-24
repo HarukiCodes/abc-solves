@@ -1,4 +1,3 @@
-// A - 202<s>3</s>
 #include <iostream>
 using namespace std;
 
