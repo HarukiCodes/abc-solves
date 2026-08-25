@@ -1,5 +1,7 @@
 // C
-#include <bits/stdc++.h>
+#include <iostream>
+#include <algorithm>
+#include <vector>
 using namespace std;
 int main()
 {
@@ -40,21 +42,21 @@ int main()
     sort(num.begin(), num.end());
 
     vector<long long> one, two, three;
-    // ˆê”Ô¬‚³‚¢”z—ñ
+    // ä¸€ç•ªå°ã•ã„é…åˆ—
     if ((A.size()) == num[0])
         one = A;
     if ((B.size()) == num[0])
         one = B;
     if ((C.size()) == num[0])
         one = C;
-    // “ñ”Ô–Ú‚É¬‚³‚¢”z—ñ
+    // äºŒç•ªç›®ã«å°ã•ã„é…åˆ—
     if ((A.size()) == num[1])
         two = A;
     if ((B.size()) == num[1])
         two = B;
     if ((C.size()) == num[1])
         two = C;
-    // ˆê”Ô‘å‚«‚¢”z—ñ
+    // ä¸€ç•ªå¤§ãã„é…åˆ—
     if ((A.size()) == num[2])
         three = A;
     if ((B.size()) == num[2])
@@ -114,48 +116,5 @@ int main()
     }
     E = clock();
     cout << static_cast<double>((E - S) / CLOCKS_PER_SEC) << endl;
-    return 0;
-}
-// C ‰ğ“š—á
-#include <bits/stdc++.h>
-using namespace std;
-int main()
-{
-    // input
-    vector<long long> n(3);
-    vector<vector<long long>> a(3);
-    for (long long i = 0; i < 3; i++)
-    {
-        cin >> n[i];
-        a[i] = vector<long long>(n[i]);
-        for (long long j = 0; j < n[i]; j++)
-            cin >> a[i][j];
-    }
-
-    unordered_set<long long> S;
-    for (long long i = 0; i < n[0]; i++)
-    {
-        for (long long j = 0; j < n[1]; j++)
-        {
-            for (long long k = 0; k < n[2]; k++)
-            {
-                long long s = a[0][i] + a[1][j] + a[2][k];
-                S.insert(s);
-            }
-        }
-    }
-
-    long long q = 0;
-    cin >> q;
-    for (long long i = 0; i < q; i++)
-    {
-        long long x;
-        cin >> x;
-        /*if (S.count(x))cout << "Yes" << endl;*/
-        if (S.find(x) != S.end())
-            cout << "Yes" << endl;
-        else
-            cout << "No" << endl;
-    }
     return 0;
 }

@@ -1,5 +1,7 @@
 // C
-#include <bits/stdc++.h>
+#include <iostream>
+#include <vector>
+#include <algorithm>
 using namespace std;
 int main()
 {
@@ -17,15 +19,15 @@ int main()
     }
     // sort
     sort(D.begin(), D.end());
-    // d•¡‚ğÁ‚·
+    // é‡è¤‡ã‚’æ¶ˆã™
     // D.erase(unique(D.begin(), D.end()), D.end());
 
     for (int i = 1; i < D.size(); i++)
     {
         if (D[i] - D[i - 1] > B)
         {
-            // B“ú‚Ì—¼’[‚Í‚·‚×‚Ä‹x“ú‚È‚Ì‚Å
-            // D[1],D[2],...,D[i-1] B“ú‹²‚ñ‚Å D[i],D[i+1],...,D[D.size()-1]
+            // Bæ—¥ã®ä¸¡ç«¯ã¯ã™ã¹ã¦ä¼‘æ—¥ãªã®ã§
+            // D[1],D[2],...,D[i-1] Bæ—¥æŒŸã‚“ã§ D[i],D[i+1],...,D[D.size()-1]
             cout << "Yes" << endl;
             return 0;
         }

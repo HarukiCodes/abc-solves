@@ -1,5 +1,6 @@
 // C
-#include <bits/stdc++.h>
+#include <iostream>
+#include <vector>
 using namespace std;
 class vector2d
 {

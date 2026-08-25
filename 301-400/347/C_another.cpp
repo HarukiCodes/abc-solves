@@ -1,5 +1,7 @@
 // C
-#include <bits/stdc++.h>
+#include <iostream>
+#include <algorithm>
+#include <vector>
 using namespace std;
 int main()
 {
@@ -20,9 +22,9 @@ int main()
 
     for (int i = 0; i < N; i++)
     {
-        // i+N = 1‚Â–Ú‚Ì—\’è -> i+N-1 = NŒÂ–Ú‚Ì—\’è
+        // i+N = 1ã¤ç›®ã®äºˆå®š -> i+N-1 = Nå€‹ç›®ã®äºˆå®š
         int L = D[i], R = D[i + N - 1];
-        // “ú”ŠÔ L+d-1=R <->d=R-L+1
+        // æ—¥æ•°é–“ L+d-1=R <->d=R-L+1
         if (R - L + 1 <= A)
         {
             cout << "Yes" << endl;

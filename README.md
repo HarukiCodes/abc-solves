@@ -26,6 +26,7 @@ T ceil(T x, T m) {
         return (x + m - 1) / m;
     }
     return x / m;
+    // return floor(x - 1, m) + 1;
 }
 ```
 

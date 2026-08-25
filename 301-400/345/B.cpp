@@ -1,10 +1,9 @@
 // B
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 int main()
 {
     long long N;
-    ;
     cin >> N;
     if (N > 0 && N % 10 != 0)
         N += 10;
