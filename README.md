@@ -73,7 +73,23 @@ std::vector<int> a(n);
 // xorを使う
 bool b = true;
 b ^= 1;  // falseになる
+
+// intバージョン
+int yes = 0;
+yes = 1 - yes;
 ```
+
+## 共通部分を持つ条件
+二つの区間を$[L1,R1],[L2,R2]$とする。<br>
+$min(L1,L2) < max(R1,R2)$<br>
+がこれら二つの区間が共通部分を持つ条件である。
+等号を加えれば、1点で重なる場合を含む。 
+
+例題 ABC361 B
+```c++
+max(l1, l2) < min(r1, r2);
+```
+
 
 # 3. 標準ライブラリ
 ## `std::all_of(), ranges::all_of()`
