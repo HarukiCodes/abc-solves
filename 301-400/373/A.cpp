@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int ans = 0;
+    for (int i = 1; i <= 12; i++) {
+        string s;
+        cin >> s;
+        if (s.size() == i) {
+            ans++;
+        }
+    }
+    cout << ans << "\n";
+    return 0;
+}
