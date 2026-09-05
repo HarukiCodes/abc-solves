@@ -1,5 +1,7 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <vector>
 using namespace std;
+
 int direction[8][2] = {{2, 1}, {1, 2}, {2, -1}, {1, -2}, {-2, 1}, {-1, 2}, {-2, -1}, {-1, -2}};
 
 bool Contain(int y, int x, vector<vector<int>> placed)
